@@ -97,18 +97,32 @@ divideNumberPositive_nbr_greaterOrEquals_0_and_divisor_greater_0_should_return_r
 [2] nbr=0, divisor=1, expected=0
 [3] nbr=-10, divisor=-120, expected=-1
 [4] nbr=10, divisor=0, expected=0
-
 ```
 
 
 ### Etape 5
 Modifiez le code source de la méthode une fois avoir obtenu des résultats identiques
 
+````java
+    public float divideNumberPositive(float nbr, float divisor)
+    {
+        if (divisor ==  0) return 0;
+        if(nbr < 0 || divisor < 0) return -1;
+        return  nbr / divisor;
+    }
+````
 
 
 
 ### Etape 6
 Relancez la méthode de test écrite à l’étape 3
+````text
+divideNumberPositive_etape3(float, float, float)
+[1] nbr=10, divisor=10, expected=1
+[2] nbr=0, divisor=1, expected=0
+[3] nbr=-10, divisor=-120, expected=-1
+[4] nbr=10, divisor=0, expected=0
+````
 
 ### Etape 7
 Si le résultat de votre appel est toujours identique au résultat contenu dans votre fichier, le traitement de la méthode n’a pas été modifié. Dans ce cas, modifiez votre méthode jusqu’à passage du test au vert
