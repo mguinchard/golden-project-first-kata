@@ -5,6 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
 public class GoldenMasterKata1Application {
+    // test
 
     public static void main(String[] args) {
         SpringApplication.run(GoldenMasterKata1Application.class, args);
